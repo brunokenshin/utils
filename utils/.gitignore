@@ -8,3 +8,6 @@
 /build/
 /gradle/
 /.gradle/
+
+#Test junk files
+/src/test/resources/changes.jpg
