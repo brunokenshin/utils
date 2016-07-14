@@ -6,7 +6,6 @@
 
 #Gradle files
 /build/
-/gradle/
 /.gradle/
 
 #Test junk files
