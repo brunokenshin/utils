@@ -66,3 +66,5 @@
 
     # Original author and post:
      + http://mindmeat.blogspot.com.br/2008/07/java-image-comparison.html
+
+[![wercker status](https://app.wercker.com/status/1d5c46e71eb57d7591ba97df1ed5e3a3/m "wercker status")](https://app.wercker.com/project/bykey/1d5c46e71eb57d7591ba97df1ed5e3a3)
