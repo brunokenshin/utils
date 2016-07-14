@@ -1,4 +1,4 @@
-# malfs-utils
+# malfs-utils ![Circle CI status](https://circleci.com/gh/brunokenshin/utils.png?style=shield&circle-token=e3a4751df12ade32953a35f9b5d5ad9852cd5b45)
 
 * Json serialization:
 
