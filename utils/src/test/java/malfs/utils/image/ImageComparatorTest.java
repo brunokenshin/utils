@@ -14,7 +14,7 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class ImageComparatorTest {
 
-    private final String imagesPath = "src/test/resources/";
+    private final String imagesPath = "src/test/resources/image/";
 
     private ImageComparator imageComparator;
     private String image2;
@@ -67,7 +67,7 @@ public class ImageComparatorTest {
         imageComparator.setParameters(25, 25, 0, 25);
         imageComparator.setDebugMode(2);
         boolean match = imageComparator.isSameImage();
-        imageComparator.createDiffImage("src/test/resources/changes.jpg");
+        imageComparator.createDiffImage("src/test/resources/image/changes.jpg");
         return match;
     }
 }

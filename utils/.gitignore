@@ -9,4 +9,4 @@
 /.gradle/
 
 #Test junk files
-/src/test/resources/changes.jpg
+/src/test/resources/image/changes.jpg

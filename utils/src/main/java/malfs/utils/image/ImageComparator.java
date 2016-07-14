@@ -34,17 +34,17 @@ public class ImageComparator {
     // 2: shows in console all the comparation matrix
     private int debugMode = 0;
 
-    // PNG images constructor
+    // PNG image constructor
     public ImageComparator(String file1, String file2) {
         this(loadPNG(file1), loadPNG(file2));
     }
 
-    // AWT images constructor
+    // AWT image constructor
     public ImageComparator(Image img1, Image img2) {
         this(imageToBufferedImage(img1), imageToBufferedImage(img2));
     }
 
-    // Buffer images constructor
+    // Buffer image constructor
     public ImageComparator(BufferedImage image1, BufferedImage image2) {
         this.image1 = image1;
         this.image2 = image2;
@@ -59,7 +59,7 @@ public class ImageComparator {
         Graphics2D gc = DistinctionImage.createGraphics();
         gc.setColor(Color.RED);
 
-        // Convert images to gray scale
+        // Convert image to gray scale
         image1 = imageToBufferedImage(GrayFilter.createDisabledImage(image1));
         image2 = imageToBufferedImage(GrayFilter.createDisabledImage(image2));
 
@@ -67,7 +67,7 @@ public class ImageComparator {
         int blockWidth = image1.getWidth() / columns;
         int blockHeigh = image1.getHeight() / lines;
 
-        // Config that images are the same by default
+        // Config that image are the same by default
         this.match = true;
 
         // Runs through the image blocks looking for differences in each
@@ -82,7 +82,7 @@ public class ImageComparator {
                 int diff = Math.abs(averageBrightnessFromImage1 - averageBrightnessFromImage2);
 
                 // Compares the difference between the sparkles with the sensitivity factor
-                // If the difference is greater than factor, the images are considered different
+                // If the difference is greater than factor, the image are considered different
                 // If they are different, it indicates with a red square on the image quadrant
                 if (diff > toleratedUncertainty) {
                     gc.drawRect(column * blockWidth, line * blockHeigh, blockWidth - 1, blockHeigh - 1);
