@@ -1,0 +1,10 @@
+# docker box definition
+box: java
+
+build:
+  steps:
+    - script:
+      name: gradle build
+      code: |
+        cd utils/
+        ./gradlew
