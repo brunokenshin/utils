@@ -1,5 +1,8 @@
 # malfs-utils ![Circle CI status](https://circleci.com/gh/brunokenshin/utils.png?style=shield&circle-token=e3a4751df12ade32953a35f9b5d5ad9852cd5b45)
 
+* List Sorting:
+    + Comparator examples for list sorting, including a chain comparator for sort using 1 or more comparators as criteria
+
 * Json serialization:
 
 * Mail sender:
